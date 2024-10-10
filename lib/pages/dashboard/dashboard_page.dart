@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import '../home/home_page.dart';
 import 'dashboard_controller.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -16,7 +16,7 @@ class DashboardPage extends StatelessWidget {
             child: IndexedStack(
               index: controller.tabIndex,
               children: [
-                //
+                HomePage(),
               ],
             ),
           ),
